@@ -6,3 +6,13 @@ Inspired by Mr. Matthew Sinclair.
 The frequencies of numbers coming up can be found on the [[https://www.national-lottery.com/lotto/statistics][National Lottery
 website]]. There we find a grid of red numbered balls with associated drawn
 counts.
+
+* What's in the box?
+In ~dev/lotto/fetch.clj~ you'll find code that fetches the National Lottery page
+of stats and extracts the stats we're interested in via the fantastic Enlive
+(which wraps TagSoup). This code generates data that we spit into an EDN file
+for later processing.
+
+~src/lotto/analyze.clj~ is where the processing happens. For our purposes we're
+not doing any heavy lifting because we're only really interested in how Clojure
+enables us to trivially manipulate data.
