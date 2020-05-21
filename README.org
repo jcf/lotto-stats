@@ -1,0 +1,8 @@
+#+TITLE: Lotto
+
+Inspired by Mr. Matthew Sinclair.
+
+* Getting the statistics
+The frequencies of numbers coming up can be found on the [[https://www.national-lottery.com/lotto/statistics][National Lottery
+website]]. There we find a grid of red numbered balls with associated drawn
+counts.

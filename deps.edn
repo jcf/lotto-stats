@@ -1,0 +1,17 @@
+{:paths ["resources" "src"]
+ :deps
+ {medley              {:mvn/version "1.1.0"}
+  org.clojure/clojure {:mvn/version "1.10.1"}}
+ 
+ :aliases
+ {:dev
+  {:extra-paths ["dev" "dev-resources"]
+   :extra-deps
+   {enlive                      {:mvn/version "1.1.6"}
+    org.clojure/test.check      {:mvn/version "0.10.0-alpha4"}
+    org.clojure/tools.namespace {:mvn/version "0.3.0-alpha4"}}}
+
+  :test
+  {:extra-paths ["test" "test-resources"]
+   :extra-deps
+   {invetica/spec {:mvn/version "0.5.0"}}}}}
